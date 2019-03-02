@@ -37,6 +37,7 @@ fetch(url)
               //TITLE AND DESCRIPTION
           const h1 = document.createElement('h1');
           const p = document.createElement('p');
+          p.setAttribute('class', 'desc-api');
           img.src = eachArticle.urlToImage;
           h1.textContent = eachArticle.title;
           p.textContent = eachArticle.description;
