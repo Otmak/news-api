@@ -40,25 +40,34 @@ fetch(url)
               //TITLE AND DESCRIPTION
           const h1 = document.createElement('h1');
           const p = document.createElement('p');
-          img.src = eachArticle.urlToImage;
-          h1.textContent = eachArticle.title;
-          p.textContent = eachArticle.description;
+              if(eachArticle.urlToImage == null){
 
-              // PASTE CARDS
-          /*container.appendChild(card)
-          card.appendChild(img)
-          card.appendChild(h1)
-          card.appendChild(p)*/
-          container.appendChild(a)
-          a.appendChild(card)
-          card.appendChild(img)
-          card.appendChild(h1)
-          card.appendChild(p)
+                  img.src = './images/image-not-available.jpg'
+
+              }else{
+
+                img.src = img.src = eachArticle.urlToImage;
+
+              }
+
+                h1.textContent = eachArticle.title;
+                p.textContent = eachArticle.description;
+
+                    // PASTE CARDS
+                /*container.appendChild(card)
+                card.appendChild(img)
+                card.appendChild(h1)
+                card.appendChild(p)*/
+                container.appendChild(a)
+                a.appendChild(card)
+                card.appendChild(img)
+                card.appendChild(h1)
+                card.appendChild(p)
 
 
-          //console LOG
-          console.log(data.articles)
-          console.log(data.articles.description)
+                //console LOG
+                console.log(data.articles)
+                console.log(data.articles.description)
 
                });
           //const eachDesc = apiDesc.map(eachDesc => data.articles.description);
