@@ -32,6 +32,9 @@ fetch(url)
               img.setAttribute('class', 'newapi-img');
               const a = document.createElement('a');
               a.setAttribute('href', aLink);
+              //open a in new tab
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
 
 
               //TITLE AND DESCRIPTION
@@ -42,10 +45,16 @@ fetch(url)
           p.textContent = eachArticle.description;
 
               // PASTE CARDS
-          container.appendChild(card)
+          /*container.appendChild(card)
+          card.appendChild(img)
+          card.appendChild(h1)
+          card.appendChild(p)*/
+          container.appendChild(a)
+          a.appendChild(card)
           card.appendChild(img)
           card.appendChild(h1)
           card.appendChild(p)
+
 
           //console LOG
           console.log(data.articles)
