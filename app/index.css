@@ -47,11 +47,11 @@ div.main a div.card {
   width: 327px
 }
 div.main a div.card:hover{
-  transform: scale(1.003, 1.003);
-  transition: all 0.2s ease-in-out;
+  transform: scale(1.03, 1.03);
+  transition: all 0.1s ease-in-out;
 }
 div.main a div.card:after{
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 
 
