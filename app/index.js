@@ -16,15 +16,11 @@ fetch(url)
      .then((data) =>{
           
           let eachArticle = data.articles;
-          
           eachArticle.map(function(eachArticle) {
-
           const card = document.createElement('div');
           card.setAttribute('class', 'card');
-
-
           eachArticle.urlToImage;
-          eachArticle.title;
+          eachArticle.title; //we don't even need line 22-24 :\
           eachArticle.description;
           let aLink = eachArticle.url
 
