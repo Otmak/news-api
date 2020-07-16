@@ -1,8 +1,3 @@
-/*  
-  Just had to prove to myself that calling an API and pasting it on a page Is pretty F++king simple 
-*/
-
-
 const app = document.getElementById('root');
 const container = document.createElement('div');
 container.setAttribute('class', 'main') 
